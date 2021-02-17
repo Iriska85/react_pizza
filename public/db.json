@@ -1,0 +1,105 @@
+{
+	"pizzas": [
+		{
+			"id": 0,
+			"imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/e8a8ded1f8154d11ab5065dc5208b187_292x292.jpeg",
+			"name": "Margarita",
+			"types": [0, 1],
+			"sizes": [26, 30, 40],
+			"price": 5,
+			"category": 0,
+			"rating": 4
+		},
+		{
+			"id": 1,
+			"imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/efed3525d49b4ccfbcef9278570419db_292x292.jpeg",
+			"name": "Carbonara",
+			"types": [0],
+			"sizes": [26, 40],
+			"price": 7,
+			"category": 0,
+			"rating": 6
+		},
+		{
+			"id": 2,
+			"imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/dc5dc4e9-932a-4abf-9472-dfb6326ea9ee.jpg",
+			"name": "Mexicana",
+			"types": [1],
+			"sizes": [26, 30],
+			"price": 4,
+			"category": 1,
+			"rating": 2
+		},
+		{
+			"id": 3,
+			"imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/1df00c72-f3fd-4d4e-8537-3ff74035c2dc.jpg",
+			"name": "Pepperoni",
+			"types": [0, 1],
+			"sizes": [26, 30, 40],
+			"price": 6.5,
+			"category": 0,
+			"rating": 7
+		},
+		{
+			"id": 4,
+			"imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/e8a8ded1f8154d11ab5065dc5208b187_292x292.jpeg",
+			"name": "Margarita HOT",
+			"types": [0, 1],
+			"sizes": [26, 30, 40],
+			"price": 5,
+			"category": 2,
+			"rating": 4
+		},
+		{
+			"id": 5,
+			"imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/efed3525d49b4ccfbcef9278570419db_292x292.jpeg",
+			"name": "Carbonara HOT",
+			"types": [0],
+			"sizes": [26, 40],
+			"price": 7,
+			"category": 2,
+			"rating": 6
+		},
+		{
+			"id": 6,
+			"imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/dc5dc4e9-932a-4abf-9472-dfb6326ea9ee.jpg",
+			"name": "Mexicana HOT",
+			"types": [1],
+			"sizes": [26, 30],
+			"price": 4,
+			"category": 2,
+			"rating": 2
+		},
+		{
+			"id": 7,
+			"imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/1df00c72-f3fd-4d4e-8537-3ff74035c2dc.jpg",
+			"name": "Pepperoni HOT",
+			"types": [0, 1],
+			"sizes": [26, 30, 40],
+			"price": 6.5,
+			"category": 2,
+			"rating": 7
+		},
+		{
+			"id": 8,
+			"imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/e8a8ded1f8154d11ab5065dc5208b187_292x292.jpeg",
+			"name": "Margarita LIGHT",
+			"types": [0, 1],
+			"sizes": [26, 30, 40],
+			"price": 5,
+			"category": 0,
+			"rating": 4
+		},
+		{
+			"id": 9,
+			"imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/efed3525d49b4ccfbcef9278570419db_292x292.jpeg",
+			"name": "Carbonara LIGHT",
+			"types": [0],
+			"sizes": [26, 40],
+			"price": 7,
+			"category": 0,
+			"rating": 6
+		}
+
+	]
+}

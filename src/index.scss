@@ -1,0 +1,513 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+
+@mixin disp-flex_space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin disp-flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+$grey-color: #F1F1F1;
+$orange-color: #FA8721;
+$black-color: #000;
+$white-color: #fff;
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFDA96;
+  padding: 3em;
+}
+
+.wrapper {
+ height: 100%;
+  padding: 3em;
+  background-color: $white-color;
+  border-radius: 1.4em;
+ 
+}
+
+.header {
+  width: 100%;
+
+  .container {
+		width: 100%;
+		margin-bottom: 4em;
+		
+		a {
+			width: 100%;
+			@include disp-flex_space-between;
+			text-decoration: none;
+		}
+
+	.header_logo {
+	  width: 25%;
+	  display: flex;
+		
+		img {
+			width: 15%;
+		}
+
+		div {
+	  		margin: 0.6em 0 0 0.6em;
+		}
+
+		h1 {
+		  font-size: 1.7em;
+		  text-transform: uppercase;
+		  margin-bottom: 0.01em;
+		}
+
+		p {
+		  color: #908F8F;
+		  font-size: 0.9em;
+		  margin-top: 0.01em;
+		}
+	}
+
+
+	.header_card {
+	  margin: 0.5em 2em 0 0;
+
+	  .button_cart {
+		  padding: 0.1em 2.5em;
+		  border-radius: 1.5em;
+		  border: 0;
+		  color: $white-color;
+		  background-color: $orange-color;
+		  font-family: inherit;
+		  font-size: 1.1em;
+		  display: flex;
+		  align-items: center;
+		  outline: none;
+
+	  	.button_delimeter {
+	  		width: 1px;
+	  		height: 25px;
+		   	background-color: #fff;
+		    margin-left: 14px;
+		    margin-right: 14px;
+		    
+	  	}
+		
+		svg {
+			width: 1.5em;
+			
+			path {
+				fill: $white-color;
+			}
+		}
+	}
+	}
+  }
+}
+
+
+.content_top {
+  @include disp-flex_space-between;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.2em;
+
+
+  .categories {
+	width: 50%;
+  
+	ul {
+		@include disp-flex_space-between;
+		list-style-type: none;
+		flex-direction: row; 
+	 	
+	 	li {
+			border-radius: 2em;
+			padding: 0.4em 1.2em;
+			background-color: $grey-color;
+			
+			&:hover {
+			  border-radius: 2em;
+			  padding: 0.4em 1.2em;
+			  background-color: $black-color;
+			  color: $white-color;
+			}
+		}
+		.active {
+			border-radius: 2em;
+			padding: 0.4em 1.2em;
+			background-color: $black-color;
+			color: $white-color;
+		}
+	}
+}
+
+.sort {
+	@include disp-flex_column;
+	align-items: center;
+	justify-content: flex-end;
+	position: relative;
+	
+  
+	&_label {
+	  display: flex;
+	  align-items: center;
+	  justify-content: flex-end;
+	  width: 11em;
+	  position: relative;
+	  
+	  	span {
+	  		font-weight: 600;
+	  	}
+
+		svg {
+			width: 30px;
+			height: 20px;
+			position: absolute;
+			top: 0.3em;
+			left: 0em;
+			
+
+			&.rotated {
+				transform: rotate(180deg);
+			}
+		}
+
+		p {
+			color: $orange-color;
+			border-bottom: 1px dashed $orange-color;
+			cursor: pointer;
+		}
+	}
+
+	&_popup  {
+		position: absolute;
+		top: 40px;
+		right: 0;
+		box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    	border-radius: 10px;
+    	
+
+		ul {
+			display: block;
+			background-color:  $white-color;
+			
+
+
+			li {
+				list-style-type: none;
+				cursor: pointer;
+				padding: 12px 20px;
+
+				&:hover {
+					background-color: $grey-color;
+				}
+
+				&.active {
+					font-weight: 600;
+					color: $orange-color;
+				}
+			}
+		}
+	}	
+}
+}
+
+.content_title {
+  margin: 1.4em 0;
+}
+
+
+
+.content_items {
+	height: 100%;
+	/*@include disp-flex_space-between;*/
+	display: flex;
+  	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-content: space-between;
+
+		.pizza_block {
+			width: 21%;
+			@include disp-flex_column;
+			align-items: center;
+
+			&:not(:nth-of-type(4n)) {
+				margin-right: 5.3%;
+			}/**/
+
+			.pizza_img {
+				width: 80%;
+			}
+
+			.pizza_name {
+			 	text-align: center;
+			 	font-size: 1.2em;
+			 	margin-top: 0.7em;
+			} 
+
+			.pizza_block_selector {
+			 	background-color:  $grey-color;
+			 	@include disp-flex_column;
+			 	height: 5em;
+			 	width: 100%;
+			 	margin: 0.5em 0;
+			 	border-radius: 1em;
+			 	text-align: center;
+			 	padding: 6px;
+
+				ul {
+					list-style-type: none;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-around;
+					align-content: space-between;
+					height: 100%;
+
+					li {
+					margin: auto;
+					border-radius: 0.4em;
+					padding: 0.1em 0.5em;
+					background-color:  $grey-color;
+					cursor: pointer;
+					width: 100%;
+
+
+						&:hover  {
+							background-color: $white-color;
+							color: $black-color;
+							border-radius: 0.4em;
+							padding: 0.2em 0.5em;
+						}
+
+						&.active  {
+							background-color: $white-color;
+							color: $black-color;
+							border-radius: 0.4em;
+							padding: 0.2em 0.5em;
+						}
+
+						&.disabled  {
+							background-color: $grey-color;
+							color:  #A29D9D;
+							pointer-events: none;
+						}
+					}
+				}
+			}
+
+			.pizza_block_bottom {
+				width: 100%;
+				@include disp-flex_space-between;
+				flex-direction: row;
+				margin: 0.2em 0;
+				align-items: center;
+
+				.pizza_block_price {
+					font-weight: 900;
+					font-size: 1.3em;
+				}
+
+				.button_add {
+					color: #F98A0B;
+					border: 3px solid $orange-color;
+					background-color: $white-color;
+					padding: 0.7em 1.8em;
+					border-radius: 2em;
+					outline: none;
+					font-weight: 900;
+					font-size: 1em;
+
+					&:hover {
+						color: $white-color;
+						background-color: $orange-color;
+					}
+				}
+			}
+		}
+}
+ 
+
+.content_empty_cart {
+	@include disp-flex_column;
+	align-items: center;
+	margin: 3em;
+	height: 100%;
+
+	.content_empty_cart_headline {
+		margin: 2em;
+		text-align: center;
+
+		&p {
+			color: #908F8F;
+			font-size: 0.9em;
+			margin-top: 0.01em;
+		}
+	}
+
+	img {
+		height: 20em;
+		margin: 2.4em;
+	}
+
+	.button_cart {
+		  padding: 0.1em 2.5em;
+		  border-radius: 1.5em;
+		  border: 0;
+		  color: $white-color;
+		  background-color: $orange-color;
+		  font-family: inherit;
+		  font-size: 1.1em;
+		  display: flex;
+		  align-items: center;
+		  outline: none;
+		  text-decoration: none;
+	}
+}
+
+
+
+
+
+.content_cart {
+  width: 80%;
+  margin: auto;
+
+	.cart_top {
+		@include disp-flex_space-between;
+		align-items: center;
+		margin-bottom: 2em;
+/* heres one more class cart*/
+		.cart h1 {
+			display: flex;
+			align-items: center;
+
+			&svg {
+				width: 2em;
+				height: 1.5em;
+			}
+		}
+
+		.cart_clear {
+			height: 4em;
+			width: 10%;
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+
+			
+
+			svg {
+				height: 40%;
+
+				path {
+					fill:#B0AAAA;
+				}
+			}
+			span {
+				font-size: 1.1em;
+				color: #B0AAAA;
+			}
+
+			&:hover {
+
+				svg {
+
+					path {
+						fill:#6F6D6D;
+					}
+				}
+				
+				span {
+				
+					color: #6F6D6D;
+				}
+			
+			}
+		}
+	}
+/* heres one more class cart_items*/
+
+}
+
+.cart_item {
+  @include disp-flex_space-between;
+  align-items: center;
+
+	.cart_item_img {
+		width: 25%;
+
+		img {
+			height: 7em;
+		}
+	}
+
+	.cart_item_info {
+		@include disp-flex_column;
+		margin-left: -10em;
+	}
+
+	.cart_item_count {
+		@include disp-flex_space-between;
+		width: 40%;
+		font-size: 1.5em;
+		font-weight: 600;
+		align-items: center;
+
+		.cart_item_plus_minus {
+			@include disp-flex_space-between;
+			width: 30%;
+			align-items: center;
+		}
+
+		.cart_item_count_button img {
+			text-align: center;
+			height: 1.7em;
+		}
+
+	}
+
+}
+
+
+.cart_bottom_details, .cart_bottom_details_total, .cart_bottom_details_price {
+  @include disp-flex_space-between;
+  font-weight: 600;
+}
+
+.cart_bottom_details {
+  margin: 2em 0;
+}
+
+.cart_bottom_buttons {
+	@include disp-flex_space-between;
+  
+	.cart_bottom_back, .cart_bottom_pay{
+		text-decoration: none;
+		padding: 0.7em 1.8em;
+		border-radius: 2em;
+		outline: none;
+		font-weight: 900;
+		font-size: 1em;
+		color: $white-color;
+		border: 3px solid $black-color;
+		background-color: $black-color;
+
+		.cart_bottom_back:hover, .cart_bottom_pay:hover {
+			color: $white-color;
+			background-color: $orange-color;
+			border: 3px solid $orange-color;
+		}
+	}
+}
+
+
+
