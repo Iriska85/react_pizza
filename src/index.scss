@@ -80,6 +80,7 @@ body {
 	.header_card {
 	  margin: 0.5em 2em 0 0;
 
+
 	  .button_cart {
 		  padding: 0.1em 2.5em;
 		  border-radius: 1.5em;
@@ -91,6 +92,7 @@ body {
 		  display: flex;
 		  align-items: center;
 		  outline: none;
+		  cursor: pointer;
 
 	  	.button_delimeter {
 	  		width: 1px;
@@ -139,6 +141,7 @@ body {
 			  padding: 0.4em 1.2em;
 			  background-color: $black-color;
 			  color: $white-color;
+			  cursor: pointer;
 			}
 		}
 		.active {
